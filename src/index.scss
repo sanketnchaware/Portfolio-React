@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-hackingGreen font-mono;
+}
+
+* {
+  // border: 1px solid red;
+}
+
+.navlinks p:hover {
+  @apply  border-b    border-l-0 shadow-sm  border-hackingGreen;
+}
+
+.navlinks p {
+  @apply cursor-pointer text-lg  m-auto px-4 border-l  border-hackingGreen;
+}
+
+
+.heading{
+  @apply text-5xl m-auto w-fit  text-center font-extrabold
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-hackingGreen opacity-20;
+
+  border-radius: 10px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background: black;
+  border-radius: 10px;
+}
+
+
+input, textarea{
+  @apply outline-none bg-black text-hackingGreen border border-slate-600 rounded-xl px-6 py-3
+}
