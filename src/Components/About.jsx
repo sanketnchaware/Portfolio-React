@@ -21,7 +21,7 @@ const About = () => {
           <h1 className="text-2xl sm:text-left text-center">Get to know me !</h1>
 
           <br />
-          <div className="text-lg space-y-2">
+          <div className="text-lg space-y-6 sm:space-y-2 sm:text-left text-center">
             {" "}
             <p>
               Web Applications that leads to the success of the overall product.

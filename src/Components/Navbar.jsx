@@ -12,7 +12,7 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="flex fixed top-0  h-auto z-50 backdrop-blur-3xl  w-full px-6 py-2  justify-between  ">
+    <nav className="flex fixed top-0  h-auto z-50 backdrop-blur-3xl  w-full px-6 py-4  justify-between drop-shadow-2xl decoration-purple-400">
       <div>
         {/* <p>Welcome!</p> */}
 

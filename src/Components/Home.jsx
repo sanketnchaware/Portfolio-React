@@ -9,11 +9,11 @@ const Home = () => {
     <div className="">
       <div className="h-screen flex  items-center justify-center flex-col gap-20 ">
         <div className="text-center">
-          <p className="text-2xl">
-            <span className=" sm:text-6xl">H</span>
+          <p className="text-xl sm:text-2xl">
+            <span className=" text-4xl sm:text-6xl">H</span>
             ello there ! 
            <br className="sm:hidden" />
-            I am <span className="text-6xl">Sanket,</span>
+            I am <span className="text-4xl sm:text-6xl">Sanket,</span>
             <br />
             <br />
             <p className="w-9/12 leading-relaxed mx-auto">

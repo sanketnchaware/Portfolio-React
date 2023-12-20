@@ -1,5 +1,5 @@
 import React from "react";
-import {  Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import About from "../Components/About";
 import Education from "../Components/Education";
 import Experiance from "../Components/Experiance";
@@ -23,7 +23,7 @@ const Layout = () => {
     <div className="">
       <Navbar />
 
-      <div className="py-4">
+      <div className="py-8">
         <Routes>
           <Route element={<Home />} path="/" />
           <Route element={<Education />} path="/education" />
