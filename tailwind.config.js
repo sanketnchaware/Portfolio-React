@@ -11,6 +11,9 @@ module.exports = {
         roboto: "Roboto",
         cursive: "Cursive",
       },
+      backgroundImage: {
+        coding1: "url('/public/images/coding (2).jpg')",
+      },
     },
   },
   plugins: [],

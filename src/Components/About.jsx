@@ -4,21 +4,25 @@ import CutomButton from "./CustomButton";
 
 const About = () => {
   return (
-    <div id="About Me" className="">
-      <div>
-        <p className="heading">About Me !</p>
-        <br />
-        <div className="flex justify-center text-2xl w-9/12 mx-auto">
-          <p className="text-center leading-normal">
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
-          </p>
+    <div id="About Me" className=" ">
+      <div className="flex h-screen items-center">
+        <div className=" ">
+          <p className="heading">About Me !</p>
+          <br />
+          <div className="flex justify-center text-2xl w-9/12 mx-auto">
+            <p className="text-center leading-normal">
+              Here you will find more information about me, what I do, and my
+              current skills mostly in terms of programming and technology
+            </p>
+          </div>
         </div>
       </div>
 
       <div className="grid grid-cols-1 py-20 sm:h-screen items-center sm:grid-cols-2 justify-between gap-10 w-10/12 mx-auto">
         <div>
-          <h1 className="text-2xl sm:text-left text-center">Get to know me !</h1>
+          <h1 className="text-2xl sm:text-left text-center">
+            Get to know me !
+          </h1>
 
           <br />
           <div className="text-lg space-y-6 sm:space-y-2 sm:text-left text-center">

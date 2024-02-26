@@ -1,35 +1,71 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import About from "./About";
 import CutomButton from "./CustomButton";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Typewriter from "typewriter-effect";
+import gsap from "gsap/dist/gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useActionData } from "react-router-dom";
 
 const Home = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    gsap.to(".moving_container", {
+      xPercent: activeIndex * 100,
+    });
+  }, [activeIndex]);
   return (
-    <div className="">
-      <div className="h-screen flex  items-center justify-center flex-col gap-20 ">
-        <div className="text-center">
-          <p className="text-xl sm:text-2xl">
-            <span className=" text-4xl sm:text-6xl">H</span>
-            ello there ! 
-           <br className="sm:hidden" />
-            I am <span className="text-4xl sm:text-6xl">Sanket,</span>
-            <br />
-            <br />
-            <p className="w-9/12 leading-relaxed mx-auto">
-              A Frontend focused Web Developer building the Frontend of Websites
-              and Web Applications that leads to the success of the overall
-              product
+    <div className="snap_parent">
+      <div className="snap_child h-screen flex  items-center justify-center flex-col gap-20 ">
+        <div className=" gap-4 w-8/12 m-auto flex  items-center justify-between">
+          <div className="">
+            <p className="text-xl sm:text-2xl">
+              <div className="flex text-4xl  sm:text-5xl italic  leading-relaxed     mx-auto">
+                <Typewriter
+                  options={{
+                    strings: ["Frontend", "Backend", "Full Stack Web"],
+                    delay: "100",
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+                Developer !
+              </div>
+              <br className="" />{" "}
+              <p className="text-xl  italic ">
+                {" "}
+                Hi, I am Sanket. A Passionate Frontend React Developer based in
+                Bangalore, India.
+              </p>
             </p>
-          </p>
+          </div>
+          <div className="w-4/12">
+            <div className="blob  w-full h-72 my-20"></div>
+          </div>
         </div>
-        <CutomButton title="Projects" />
+        {/* <CutomButton title="Projects" /> */}
       </div>
+
+      {/* <div className="h-screen overflow-y-hidden overflow-x-scroll">
+        <div className="flex h-screen bg-red-500 moving_container">
+          <div className="h-full w-screen bg-pink-200"></div>
+          <div className="h-full w-screen bg-pink-200"></div>
+          <div className="h-full w-screen bg-pink-200"></div>
+          <div className="h-full w-screen bg-pink-200"></div>
+        </div>
+      </div> */}
 
       <About />
 
-      <Projects />
-      <Contact />
+      <div className="snap_child">
+        <Projects />
+      </div>
+      <div className="snap_child">
+        <Contact />
+      </div>
     </div>
   );
 };

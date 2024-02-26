@@ -16,7 +16,7 @@ const Projects = () => {
 
     
 
-      {[1, 2, 3, 1, 4].map((item, index) => {
+      {[1, 2,].map((item, index) => {
         return (
           <div className="grid grid-cols-1 sm:grid-cols-2 justify-between gap-10 w-10/12 m-auto">
             <div className="border border-hackingGreen rounded-xl w-full h-60">

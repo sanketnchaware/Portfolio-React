@@ -12,7 +12,7 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="flex fixed top-0  h-auto z-50 backdrop-blur-3xl  w-full px-6 py-4  justify-between drop-shadow-2xl decoration-purple-400">
+    <nav className="flex bg-slate-900 fixed top-0  h-auto z-50 backdrop-blur-3xl  w-full px-6 py-4  justify-between drop-shadow-2xl decoration-purple-400">
       <div>
         {/* <p>Welcome!</p> */}
 
@@ -22,21 +22,19 @@ const Navbar = () => {
           alt="profile_photo"
         />
       </div>
-      <div className="navlinks  hidden sm:flex justify-between  w-6/12  ">
-        {["Home", "Education", "Skills", "Work Experiance", "About Me"].map(
-          (item) => {
-            return (
-              <p
-                id={item}
-                onClick={() => {
-                  ShowComponent(item);
-                }}
-              >
-                {item}
-              </p>
-            );
-          }
-        )}
+      <div className="navlinks  hidden sm:flex justify-between  w-4/12  ">
+        {["Home", "Work Experiance", "Projects", "About Me"].map((item) => {
+          return (
+            <p
+              id={item}
+              onClick={() => {
+                ShowComponent(item);
+              }}
+            >
+              {item}
+            </p>
+          );
+        })}
       </div>
     </nav>
   );
