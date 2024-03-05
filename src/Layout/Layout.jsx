@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import About from "../Components/About";
-import Education from "../Components/Education";
+// import Education from "../Components/Education";
 import Experiance from "../Components/Experiance";
 import Home from "../Components/Home";
-import Skills from "../Components/Skills";
+// import Skills from "../Components/Skills";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Projects from "../Components/Projects";
