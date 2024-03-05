@@ -20,10 +20,10 @@ const Home = () => {
   return (
     <div className="snap_parent">
       <div className="snap_child h-screen flex  items-center justify-center flex-col gap-20 ">
-        <div className=" gap-4 w-8/12 m-auto flex  items-center justify-between">
+        <div className=" gap-4 w-11/12  sm:w-8/12 m-auto flex sm:flex-row flex-col-reverse items-center justify-between">
           <div className="">
             <p className="text-xl sm:text-2xl">
-              <div className="flex text-4xl  sm:text-5xl italic  leading-relaxed     mx-auto">
+              <div className="flex text-2xl  sm:text-5xl italic  leading-relaxed     mx-auto">
                 <Typewriter
                   options={{
                     strings: ["Frontend", "Backend", "Full Stack Web"],
@@ -42,8 +42,8 @@ const Home = () => {
               </p>
             </p>
           </div>
-          <div className="w-4/12">
-            <div className="blob  w-full h-72 my-20"></div>
+          <div className="w-8/12 m-auto sm:w-4/12">
+            <div className="blob  w-full h-60 sm:h-72 my-10 sm:my-20"></div>
           </div>
         </div>
         {/* <CutomButton title="Projects" /> */}
