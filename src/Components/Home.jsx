@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
 import About from "./About";
-import CutomButton from "./CustomButton";
+// import CutomButton from "./CustomButton";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Typewriter from "typewriter-effect";
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { useActionData } from "react-router-dom";
+// import { useActionData } from "react-router-dom";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
 
-  useEffect(() => {
-    gsap.to(".moving_container", {
-      xPercent: activeIndex * 100,
-    });
-  }, [activeIndex]);
+  // useEffect(() => {
+  //   gsap.to(".moving_container", {
+  //     xPercent: activeIndex * 100,
+  //   });
+  // }, [activeIndex]);
   return (
     <div className="snap_parent">
       <div className="snap_child h-screen flex  items-center justify-center flex-col gap-20 ">
