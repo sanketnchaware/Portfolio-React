@@ -6,17 +6,10 @@ import Contact from "./Contact";
 import Typewriter from "typewriter-effect";
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-// import { useActionData } from "react-router-dom";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
-  // const [activeIndex, setActiveIndex] = useState(0);
 
-  // useEffect(() => {
-  //   gsap.to(".moving_container", {
-  //     xPercent: activeIndex * 100,
-  //   });
-  // }, [activeIndex]);
   return (
     <div className="snap_parent  space-y-44 ">
       <div className="snap_child mt-12 sm:h-screen flex  items-center justify-center flex-col gap-20 ">
