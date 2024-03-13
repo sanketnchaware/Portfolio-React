@@ -12,6 +12,7 @@ module.exports = {
         cursive: "Cursive",
       },
       backgroundImage: {
+        photo: "url('/public/images/photo.png')",
         coding1: "url('/public/images/coding (2).jpg')",
       },
     },

@@ -36,7 +36,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-hackingGreen opacity-20;
+  @apply bg-black opacity-20;
 
   border-radius: 10px;
   height: 1px;
@@ -47,7 +47,7 @@ body {
   width: 10px;
   height: 10px;
   cursor: pointer;
-  background: black;
+  @apply bg-hackingGreen ;
   border-radius: 10px;
 }
 
@@ -60,6 +60,7 @@ input, textarea{
 
 .blob{
   background-image: url(https://media.licdn.com/dms/image/D4D03AQG4UidxEKClLQ/profile-displayphoto-shrink_800_800/0/1709187779093?e=1714608000&v=beta&t=N-NuPyPHj1zW-KvV7lCaVTa3OcRYX5AcPeuE-LgR2Xg);
+  
   
   background-size: cover;
   -webkit-background-position: center;

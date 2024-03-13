@@ -18,45 +18,56 @@ const Home = () => {
   //   });
   // }, [activeIndex]);
   return (
-    <div className="snap_parent">
-      <div className="snap_child h-screen flex  items-center justify-center flex-col gap-20 ">
-        <div className=" gap-4 w-11/12  sm:w-8/12 m-auto flex sm:flex-row flex-col-reverse items-center justify-between">
-          <div className="">
-            <p className="text-xl sm:text-2xl">
-              <div className="flex text-2xl  sm:text-5xl italic  leading-relaxed     mx-auto">
-                <Typewriter
-                  options={{
-                    strings: ["Frontend", "Backend", "Full Stack Web"],
-                    delay: "100",
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-                Developer !
-              </div>
-              <br className="" />{" "}
-              <p className="text-xl  italic ">
-                {" "}
-                Hi, I am Sanket. A Passionate Frontend React Developer based in
-                Bangalore, India.
+    <div className="snap_parent  space-y-44 ">
+      <div className="snap_child mt-12 sm:h-screen flex  items-center justify-center flex-col gap-20 ">
+        <div className="w-11/12  sm:w-8/12 m-auto">
+          <div className=" gap-4  flex sm:flex-row flex-col-reverse items-center  justify-between">
+            <div className="">
+              <p className="text-xl sm:text-2xl">
+                <div className="flex font-extrabold text-2xl  sm:text-4xl italic  leading-relaxed     mx-auto">
+                  <Typewriter
+                    options={{
+                      strings: ["FRONTEND", "BACKEND", "FULL STACK WEB"],
+                      delay: "100",
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                  DEVELOPER !
+                </div>
+                <br className="" />{" "}
+                <p className="text-2xl sm:w-8/12  italic ">
+                  {" "}
+                  Hi, I am Sanket. A Frontend Focused Full Stack Web Developer
+                  based in Bangalore, India.
+                </p>
+                <br />
+                <div className="flex sm:justify-start justify-center items-center gap-4">
+                  <img className="w-6 h-6" src="/icons/linkedin.svg" alt="" />
+                  <img className="w-8 h-8" src="/icons/github.svg" alt="" />
+                </div>
               </p>
-            </p>
+            </div>
+            <div className="w-8/12 m-auto sm:w-6/12">
+              <div className="blob  grayscale w-full h-60 sm:h-72 my-10 sm:my-20"></div>
+            </div>
           </div>
-          <div className="w-8/12 m-auto sm:w-4/12">
-            <div className="blob  w-full h-60 sm:h-72 my-10 sm:my-20"></div>
+          <div className="text-xl hidden sm:flex items-center justify-between sm:flex-wrap gap-4 w-full sm:w-5/12">
+            <p className="font-bold sm:block hidden ">Tech Stack | </p>{" "}
+            {/* <img className="w-8 h-8" src="/icons/htm.svg" alt="" /> */}
+            {/* <img className="w-8 h-8" src="/icons/css.svg" alt="" /> */}
+            {/* <img className="w-8 h-8" src="/icons/js.svg" alt="" /> */}
+            <img className="w-10 h-10" src="/icons/mongo.svg" alt="" />
+            <img className="w-20 h-20" src="/icons/express.svg" alt="" />
+            <img className="w-8 h-8" src="/icons/react.svg" alt="" />
+            {/* <img className="w-20 h-20" src="/icons/nextjs.svg" alt="" /> */}
+            {/* <img className="w-8 h-8" src="/icons/ts.svg" alt="" /> */}
+            <img className="w-8 h-8" src="/icons/nodejs.svg" alt="" />
+            {/* <img className="w-10 h-10" src="/icons/sass.svg" alt="" /> */}
           </div>
+          {/* <CutomButton title="Projects" /> */}
         </div>
-        {/* <CutomButton title="Projects" /> */}
       </div>
-
-      {/* <div className="h-screen overflow-y-hidden overflow-x-scroll">
-        <div className="flex h-screen bg-red-500 moving_container">
-          <div className="h-full w-screen bg-pink-200"></div>
-          <div className="h-full w-screen bg-pink-200"></div>
-          <div className="h-full w-screen bg-pink-200"></div>
-          <div className="h-full w-screen bg-pink-200"></div>
-        </div>
-      </div> */}
 
       <About />
 

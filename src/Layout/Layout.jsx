@@ -28,7 +28,7 @@ const Layout = () => {
     <div className="">
       <Navbar />
 
-      <div className="">
+      <div className="z-[999]">
         <Routes>
           <Route element={<Home />} path="/" />
           <Route element={<About />} path="/about" />

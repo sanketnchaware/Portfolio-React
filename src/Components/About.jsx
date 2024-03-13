@@ -5,14 +5,20 @@ import CutomButton from "./CustomButton";
 const About = () => {
   return (
     <div id="About Me" className=" ">
-      <div className="flex h-screen items-center">
+      <div className="flex  sm:h-screen items-center">
         <div className=" ">
           <p className="heading">About Me !</p>
           <br />
           <div className="flex justify-center text-2xl w-9/12 mx-auto">
             <p className="text-center leading-normal">
-              Here you will find more information about me, what I do, and my
-              current skills mostly in terms of programming and technology
+              Hi, I am Sanket. A Frontend Focused Full Stack Web Developer based
+              in Bangalore, India. A Covid batch graduate with a passion for web
+              development. After completing a 6-month full-stack training
+              program, I've spent the last 2.2 years working as a frontend
+              developer at a Bangalore-based startup. My expertise lies in
+              crafting dynamic web experiences using HTML, CSS, JavaScript,
+              React, Redux Toolkit, and Tailwind CSS. Check out my projects
+              below.
             </p>
           </div>
         </div>
@@ -32,12 +38,8 @@ const About = () => {
               Check out some of my work in the Projects section.
             </p>{" "}
             <p>
-              I'm a Frontend Web Developer building the Front-end of Websites
-              and I also like sharing content related to the stuff that I have
-              learned over the years in Web Development so it can help other
-              people of the Dev Community. Feel free to Connect or Follow me on
-              my Linkedin where I post useful content related to Web Development
-              and Programming.
+              I'm a Frontend Web Developer building the Front-end of Websites.
+              Feel free to Connect or Follow me on my Linkedin.
             </p>
             <p>
               I'm open to Job opportunities where I can contribute, learn and
