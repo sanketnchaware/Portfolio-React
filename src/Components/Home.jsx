@@ -42,7 +42,10 @@ const Home = () => {
               </p>
             </div>
             <div className="w-8/12 m-auto sm:w-6/12">
-              <div className="blob  grayscale w-full h-60 sm:h-72 my-10 sm:my-20"></div>
+              <div className="blob   w-full h-60 sm:h-80 relative overflow-hidden my-10 sm:my-20">
+                <img src="/images/profile.webp " className=" absolute" alt="" />
+                <div className="bg-hackingGreen opacity-50 -z-10 absolute  w-full h-full"></div>
+              </div>
             </div>
           </div>
           <div className="text-xl hidden sm:flex items-center justify-between sm:flex-wrap gap-4 w-full sm:w-5/12">

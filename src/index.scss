@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-black text-hackingGreen font-mono;
+  @apply bg-black text-hackingGreen font-Outfit ;
 }
 
 
@@ -18,7 +18,7 @@ body {
 }
 
 .navlinks p:hover {
-  @apply  border-b    border-l-0 shadow-sm  border-hackingGreen;
+  @apply  border-b  font-Outfit  border-l-0 shadow-sm  border-hackingGreen;
 }
 
 .navlinks p {
@@ -29,6 +29,8 @@ body {
 .heading{
   @apply text-5xl m-auto w-fit  text-center font-extrabold
 }
+
+
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -78,6 +80,17 @@ input, textarea{
       border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
 }
+
+
+
+// fonts typography
+
+
+
+
+
+
+
 
 
 

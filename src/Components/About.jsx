@@ -24,14 +24,14 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 py-20 sm:h-screen items-center sm:grid-cols-2 justify-between gap-10 w-10/12 mx-auto">
+      <div className="grid grid-cols-1 py-20 sm:h-screen sm:items-start items-center sm:grid-cols-2 justify-between gap-10 w-10/12 mx-auto">
         <div>
           <h1 className="text-2xl sm:text-left text-center">
             Get to know me !
           </h1>
 
           <br />
-          <div className="text-lg space-y-6 sm:space-y-2 sm:text-left text-center">
+          <div className="text-2xl space-y-6 sm:space-y-2 sm:text-left text-center">
             {" "}
             <p>
               Web Applications that leads to the success of the overall product.
@@ -54,7 +54,7 @@ const About = () => {
           <h1 className="text-2xl sm:text-left text-center">My Skills !</h1>
 
           <br />
-          <div className="flex sm:justify-start justify-center  flex-wrap gap-4 items-center">
+          <div className="flex sm:justify-start justify-center  flex-wrap gap-4  items-center">
             {[
               "HTML",
               "CSS",

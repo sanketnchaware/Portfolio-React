@@ -1,6 +1,7 @@
 import React from "react";
 
 import CustomButton from "./CustomButton";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -32,18 +33,42 @@ const Projects = () => {
           description:
             " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
         },
-        // {
-        //   name: "Zaincare",
-        //   img: "/images/zaincare.webp",
-        //   description:
-        //     " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
-        // },
-        // {
-        //   name: "Zaincare",
-        //   img: "/images/zaincare.webp",
-        //   description:
-        //     " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
-        // },
+        {
+          name: "LMNT",
+          img: "/images/zaincare.webp",
+          description:
+            " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+        },
+        {
+          name: "ApplyUniNow",
+          img: "/images/zaincare.webp",
+          description:
+            " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+        },
+        {
+          name: "Gumazing",
+          img: "/images/zaincare.webp",
+          description:
+            " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+        },
+        {
+          name: "Tavasay",
+          img: "/images/zaincare.webp",
+          description:
+            " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+        },
+        {
+          name: "Freekart",
+          img: "/images/zaincare.webp",
+          description:
+            " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+        },
+        {
+          name: "Portfolio",
+          img: "/images/zaincare.webp",
+          description:
+            " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+        },
       ].map(({ name, img, description }, index) => {
         return (
           <div className="grid  grid-cols-1 sm:grid-cols-2 justify-between gap-10 w-10/12 m-auto">
@@ -53,9 +78,17 @@ const Projects = () => {
             <div className="flex items-center">
               <div className="space-y-6">
                 <h1 className="text-3xl font-bold">{name}</h1>
-
                 <p className="text-xl">{description}</p>
-                <CustomButton title="Case Study" />
+
+                <div className="flex items-center gap-4">
+                  <Link className="underline font-Outfit" to="#">
+                    See Demo
+                  </Link>
+                  <Link className="underline" to="#">
+                    Github
+                  </Link>
+                </div>
+                {/* <CustomButton title="Case Study" /> */}
               </div>
             </div>
           </div>
