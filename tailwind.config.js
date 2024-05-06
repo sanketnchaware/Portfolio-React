@@ -8,6 +8,7 @@ module.exports = {
         black: "#000000",
       },
       fontFamily: {
+        Outfit: ['"Outfit"'],
         roboto: "Roboto",
         cursive: "Cursive",
       },
