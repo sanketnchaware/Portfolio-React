@@ -17,7 +17,7 @@ const Home = () => {
           <div className=" gap-4  flex sm:flex-row flex-col-reverse items-center  justify-between">
             <div className="">
               <p className="text-xl sm:text-2xl">
-                <div className="flex font-extrabold text-2xl  sm:text-4xl italic  leading-relaxed     mx-auto">
+                <h1 className="flex  italic  leading-relaxed     mx-auto">
                   <Typewriter
                     options={{
                       strings: ["FRONTEND", "BACKEND", "FULL STACK WEB"],
@@ -27,7 +27,7 @@ const Home = () => {
                     }}
                   />
                   DEVELOPER !
-                </div>
+                </h1>
                 <br className="" />{" "}
                 <p className="text-2xl sm:w-8/12  italic ">
                   {" "}
