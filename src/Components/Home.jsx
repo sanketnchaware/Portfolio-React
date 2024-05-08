@@ -6,12 +6,14 @@ import Contact from "./Contact";
 import Typewriter from "typewriter-effect";
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import Experiance from "./Experiance";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   return (
-    <div className="snap_parent  space-y-44 ">
+    <div id="home" className="snap_parent  space-y-44 ">
       <div className="snap_child mt-12 sm:h-screen flex  items-center justify-center flex-col gap-20 ">
         <div className="w-11/12  sm:w-8/12 m-auto">
           <div className=" gap-4  flex sm:flex-row flex-col-reverse items-center  justify-between">
@@ -36,14 +38,22 @@ const Home = () => {
                 </p>
                 <br />
                 <div className="flex sm:justify-start justify-center items-center gap-4">
-                  <img className="w-6 h-6" src="/icons/linkedin.svg" alt="" />
-                  <img className="w-8 h-8" src="/icons/github.svg" alt="" />
+                  <Link to="/" className="">
+                    <img className="w-6 h-6" src="/icons/linkedin.svg" alt="" />
+                  </Link>
+                  <Link to="/">
+                    <img className="w-8 h-8" src="/icons/github.svg" alt="" />
+                  </Link>
                 </div>
               </p>
             </div>
             <div className="w-8/12 m-auto sm:w-6/12">
               <div className="blob   w-full h-60 sm:h-80 relative overflow-hidden my-10 sm:my-20">
-                <img src="/images/profile.webp " className=" absolute" alt="" />
+                <img
+                  src="/images/profile.webp "
+                  className="-top-5 absolute"
+                  alt=""
+                />
                 <div className="bg-hackingGreen opacity-50 -z-10 absolute  w-full h-full"></div>
               </div>
             </div>
@@ -67,10 +77,14 @@ const Home = () => {
 
       <About />
 
-      <div className="snap_child">
+      <div id="experiance" className="">
+        <Experiance />
+      </div>
+
+      <div id="projects" className="snap_child">
         <Projects />
       </div>
-      <div className="snap_child">
+      <div id="contact" className="snap_child">
         <Contact />
       </div>
     </div>

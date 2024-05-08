@@ -5,7 +5,7 @@ import CutomButton from "./CustomButton";
 const About = () => {
   return (
     <div id="About Me" className=" ">
-      <div className="flex  sm:h-screen items-center">
+      <div id="about" className="flex    sm:h-screen items-center">
         <div className=" ">
           <p className="heading">About Me !</p>
           <br />
