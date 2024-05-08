@@ -3,7 +3,7 @@ import React from "react";
 const Experiance = () => {
   return (
     <div className="w-9/12 m-auto h-screen  pt-24  ">
-      <div className="">
+      <div className=" space-y-10">
         <p className="heading ">Experiance !</p>
 
         <div className=" text-2xl flex mt-10 items-center  justify-between">
@@ -16,7 +16,7 @@ const Experiance = () => {
           </div>
         </div>
         <br />
-        <ul className="list-disc pl-6 space-y-4">
+        <ul className="list-disc space-y-4 pl-6 ">
           <li className="text-xl">
             Built responsive and performant user interfaces using ReactJS,
             Redux-Toolkit, NextJS, and Tailwind CSS, delivering seamless

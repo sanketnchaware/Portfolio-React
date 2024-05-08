@@ -38,7 +38,10 @@ const Home = () => {
                 </p>
                 <br />
                 <div className="flex sm:justify-start justify-center items-center gap-4">
-                  <Link to="/" className="">
+                  <Link
+                    to="https://www.linkedin.com/in/sanketnchaware/"
+                    className=""
+                  >
                     <img className="w-6 h-6" src="/icons/linkedin.svg" alt="" />
                   </Link>
                   <Link to="/">
