@@ -1,19 +1,6 @@
 import React from "react";
 
 const Navbar = () => {
-  const ShowComponent = (itemid) => {
-    console.log("itemid:", itemid);
-    document.querySelector(`.${itemid}`).scrollIntoView({
-      behavior: "smooth",
-    });
-
-    // if (element) {
-    //   window.scroll({
-    //     top: element.scrollTop,
-    //     behavior: "smooth",
-    //   });
-    // }
-  };
   return (
     <nav className="flex bg-slate-900 fixed top-0  h-auto z-50 backdrop-blur-3xl  w-full px-6 py-4  justify-between drop-shadow-2xl decoration-purple-400">
       <div>
@@ -29,20 +16,16 @@ const Navbar = () => {
             { name: "Contact Me", url: "contact" },
           ].map(({ name, url }) => {
             return (
-              <a
+              <button
                 className="cursor-pointer"
                 onClick={() => {
                   document.querySelector(`#${url}`).scrollIntoView({
                     behavior: "smooth",
                   });
                 }}
-                // href={`#${url}`}
-                // onClick={() => {
-                //   ShowComponent(url);
-                // }}
               >
                 {name}
-              </a>
+              </button>
             );
           })
         )}
