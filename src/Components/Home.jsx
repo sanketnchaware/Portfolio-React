@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div id="home" className="snap_parent  space-y-44 ">
-      <div className="snap_child mt-12 sm:h-screen flex  items-center justify-center flex-col gap-20 ">
+      <div className="snap_child mt-24 sm:m-auto sm:h-screen flex  items-center justify-center flex-col gap-20 ">
         <div className="w-11/12  sm:w-8/12 m-auto">
           <div className=" gap-4  flex sm:flex-row flex-col-reverse items-center  justify-between">
             <div className="">
@@ -39,6 +39,12 @@ const Home = () => {
                 <br />
                 <div className="flex sm:justify-start justify-center items-center gap-4">
                   <Link
+                    to="https://drive.google.com/drive/folders/1bDBVfCfoIbI2gzIyDTas3LaQf8kazYvd"
+                    className=""
+                  >
+                    <img className="w-6 h-6" src="/icons/resume.svg" alt="" />
+                  </Link>
+                  <Link
                     to="https://www.linkedin.com/in/sanketnchaware/"
                     className=""
                   >
@@ -54,10 +60,10 @@ const Home = () => {
               <div className="blob   w-full h-60 sm:h-80 relative overflow-hidden my-10 sm:my-20">
                 <img
                   src="/images/profile.webp "
-                  className="-top-5 absolute"
+                  className="brightness-50 -top-5 absolute"
                   alt=""
                 />
-                <div className="bg-hackingGreen opacity-50 -z-10 absolute  w-full h-full"></div>
+                <div className="bg-transparent  -z-10 absolute  w-full h-full"></div>
               </div>
             </div>
           </div>
