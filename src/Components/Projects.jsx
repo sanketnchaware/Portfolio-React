@@ -9,54 +9,63 @@ const projects = [
     img: "/images/zaincare.webp",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+    isPersonal: false,
   },
   {
     name: "Duvet Homes",
     img: "/images/duvet.webp",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+    isPersonal: false,
   },
   {
     name: "Sneakout World",
     img: "/images/sneakout.webp",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+    isPersonal: false,
   },
   {
     name: "LMNT",
     img: "/images/zaincare.webp",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+    isPersonal: false,
   },
   {
     name: "ApplyUniNow",
     img: "/images/zaincare.webp",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+    isPersonal: false,
   },
   {
     name: "Gumazing",
     img: "/images/zaincare.webp",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+    isPersonal: false,
   },
   {
     name: "Tavasay",
     img: "/images/zaincare.webp",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+    isPersonal: true,
   },
   {
     name: "Freekart",
     img: "/images/zaincare.webp",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+    isPersonal: true,
   },
   {
     name: "Portfolio",
     img: "/images/zaincare.webp",
     description:
       " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+    isPersonal: true,
   },
 ];
 
@@ -73,7 +82,7 @@ const Projects = () => {
       </div>
 
       {React.Children.toArray(
-        projects.map(({ name, img, description }, index) => {
+        projects.map(({ name, img, description, isPersonal }, index) => {
           return (
             <div
               className={`${
@@ -92,9 +101,13 @@ const Projects = () => {
                     <Link className="underline font-Outfit" to="#">
                       See Demo
                     </Link>
-                    <Link className="underline" to="#">
-                      Github
-                    </Link>
+                    {isPersonal ? (
+                      <Link className="underline" to="#">
+                        Github
+                      </Link>
+                    ) : (
+                      ""
+                    )}
                   </div>
                   {/* <CustomButton title="Case Study" /> */}
                 </div>
