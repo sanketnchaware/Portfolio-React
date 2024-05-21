@@ -15,9 +15,9 @@ const Home = () => {
   return (
     <div id="home" className="snap_parent  space-y-44 ">
       <div className="snap_child mt-24 sm:m-auto sm:h-screen flex  items-center justify-center flex-col gap-20 ">
-        <div className="w-11/12  sm:w-8/12 m-auto">
-          <div className=" gap-4  flex sm:flex-row flex-col-reverse items-center  justify-between">
-            <div className="">
+        <div className="w-11/12   sm:w-9/12 m-auto">
+          <div className=" gap-4   h-full flex sm:flex-row flex-col-reverse items-center  justify-between">
+            <div className="w-full">
               <p className="text-xl sm:text-2xl">
                 <h1 className="flex  italic  leading-relaxed     mx-auto">
                   <Typewriter
@@ -56,15 +56,16 @@ const Home = () => {
                 </div>
               </p>
             </div>
-            <div className="w-8/12 m-auto sm:w-6/12">
-              <div className="blob   w-full h-60 sm:h-80 relative overflow-hidden my-10 sm:my-20">
+            <div className="w-8/12 debug">
+              <img src="/icons/programming.svg " className="w-full" alt="" />
+              {/* <div className="blob   w-full h-60 sm:h-80 relative overflow-hidden my-10 sm:my-20">
                 <img
-                  src="/images/profile.webp "
-                  className="brightness-50 -top-5 absolute"
+                  src="/icons/programming.svg "
+                  className="-top-5 absolute"
                   alt=""
                 />
                 <div className="bg-transparent  -z-10 absolute  w-full h-full"></div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="text-xl hidden sm:flex items-center justify-between sm:flex-wrap gap-4 w-full sm:w-5/12">
