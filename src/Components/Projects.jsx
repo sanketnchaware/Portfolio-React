@@ -78,7 +78,7 @@ const projects = [
 ];
 
 const Projects = () => {
-  const [projectsCount, setProjectsCount] = useState(3);
+  const [projectsCount] = useState(3);
   return (
     <div id="About Me" className="py-24 space-y-10">
       <p className="heading">Projects !</p>

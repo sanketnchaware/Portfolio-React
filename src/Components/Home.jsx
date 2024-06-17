@@ -3,7 +3,7 @@ import About from "./About";
 // import CutomButton from "./CustomButton";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Experiance from "./Experiance";
