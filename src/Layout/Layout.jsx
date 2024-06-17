@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-import About from "../Components/About";
+import { useLocation } from "react-router-dom";
 // import Education from "../Components/Education";
-import Experiance from "../Components/Experiance";
+// import Experiance from "../Components/Experiance";
 import Home from "../Components/Home";
 // import Skills from "../Components/Skills";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import Projects from "../Components/Projects";
+// import Projects from "../Components/Projects";
 
 const Layout = () => {
   const { pathname } = useLocation();
@@ -27,7 +26,7 @@ const Layout = () => {
   return (
     <div className="">
       <Navbar />
-    
+
       <div className="z-[999]">
         <Home />
       </div>
