@@ -35,6 +35,10 @@ module.exports = {
         photo: "url('/public/images/photo.png')",
         coding1: "url('/public/images/coding (2).jpg')",
       },
+
+      boxShadow: {
+        sameshadow: "2px 2px 50px 10px rgba(0,225,0,0.6)",
+      },
     },
   },
   plugins: [],

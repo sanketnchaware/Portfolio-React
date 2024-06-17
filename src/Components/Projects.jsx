@@ -4,68 +4,77 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
+    name: "LWL8 Website",
+    img: "/images/lwl8.webp",
+    url: "//lwl8.com",
+    description:
+      "LWL8 Website which is an smart bottle selling website which is build using Next.js, Tailwind CSS for building UI and GSAP for animations. ",
+    isPersonal: false,
+  },
+  {
     name: "Zaincare",
     img: "/images/zaincare.webp",
+    url: "//zaincare.com",
     description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+      "A rising home healthcare provider, offers personalized care plans and exceptional services delivered by qualified caregivers. Built with React, Tailwind CSS, Sass, and Redux Toolkit.",
     isPersonal: false,
   },
+  // {
+  //   name: "Duvet Homes",
+  //   img: "/images/duvet.webp",
+  //   description:
+  //     " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+  //   isPersonal: false,
+  // },
+  // {
+  //   name: "Sneakout World",
+  //   img: "/images/sneakout.webp",
+  //   description:
+  //     " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+  //   isPersonal: false,
+  // },
   {
-    name: "Duvet Homes",
-    img: "/images/duvet.webp",
+    name: "LMNT Admin Panel and Customer Web App",
+    img: "/images/lmnt.webp",
     description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+      "A Gym Management Application, which manages customer sessions and memberships.And a website provided for customers to track their membership details and session schedules, ensuring a streamlined fitness experience for all.",
     isPersonal: false,
   },
-  {
-    name: "Sneakout World",
-    img: "/images/sneakout.webp",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
-    isPersonal: false,
-  },
-  {
-    name: "LMNT",
-    img: "/images/zaincare.webp",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
-    isPersonal: false,
-  },
-  {
-    name: "ApplyUniNow",
-    img: "/images/zaincare.webp",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
-    isPersonal: false,
-  },
-  {
-    name: "Gumazing",
-    img: "/images/zaincare.webp",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
-    isPersonal: false,
-  },
-  {
-    name: "Tavasay",
-    img: "/images/zaincare.webp",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
-    isPersonal: true,
-  },
-  {
-    name: "Freekart",
-    img: "/images/zaincare.webp",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
-    isPersonal: true,
-  },
-  {
-    name: "Portfolio",
-    img: "/images/zaincare.webp",
-    description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
-    isPersonal: true,
-  },
+  // {
+  //   name: "ApplyUniNow",
+  //   img: "/images/zaincare.webp",
+  //   description:
+  //     " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+  //   isPersonal: false,
+  // },
+  // {
+  //   name: "Gumazing",
+  //   img: "/images/zaincare.webp",
+  //   description:
+  //     " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+  //   isPersonal: false,
+  // },
+  // {
+  //   name: "Tavasay",
+  //   img: "/images/zaincare.webp",
+  //   description:
+  //     " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+  //   isPersonal: true,
+  // },
+  // {
+  //   name: "Freekart",
+  //   img: "/images/zaincare.webp",
+  //   description:
+  //     " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+  //   isPersonal: true,
+  // },
+  // {
+  //   name: "Portfolio",
+  //   img: "/images/zaincare.webp",
+  //   description:
+  //     " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, in. A numquam vel repellendus dolorum odit impeditsuscipit praesentium facilis libero enim dolor quibusdam vitaeblanditiis, cum quasi exercitationem officiis.",
+  //   isPersonal: true,
+  // },
 ];
 
 const Projects = () => {
@@ -80,43 +89,56 @@ const Projects = () => {
         </p>
       </div>
 
-      {React.Children.toArray(
-        projects.map(({ name, img, description, isPersonal }, index) => {
-          return (
-            <div
-              className={`${
-                index < projectsCount ? "grid" : "hidden"
-              }   grid-cols-1 sm:grid-cols-2 justify-between gap-10 w-10/12 m-auto`}
-            >
-              <div className="border border-hackingGreen rounded-xl w-full h-fit p-2 ">
-                <img src={img} className="rounded-xl" alt="proj_image" />
-              </div>
-              <div className="flex items-center">
-                <div className="space-y-6">
-                  <h1 className="text-3xl font-bold">{name}</h1>
-                  <p className="text-xl">{description}</p>
+      <div className="space-y-20">
+        {React.Children.toArray(
+          projects.map(({ name, img, url, description, isPersonal }, index) => {
+            return (
+              <div
+                className={`  shadow-sameshadow  rounded-3xl  p-10 ${
+                  index < projectsCount ? "grid" : "hidden"
+                }   grid-cols-1 sm:grid-cols-2 justify-between gap-10 w-10/12 m-auto`}
+              >
+                <div
+                  className={`${
+                    index % 2 === 0 ? "order-1" : ""
+                  }  rounded-xl w-full h-fit p-2 `}
+                >
+                  <img
+                    src={img}
+                    className="opacity-25 ease-linear duration-200 mix-blend-luminosity hover:mix-blend-normal cursor-pointer transition-all  hover:opacity-100 rounded-xl"
+                    alt="proj_image"
+                  />
+                </div>
+                <div className="flex items-center">
+                  <div className="space-y-6">
+                    <h1 className="text-3xl font-bold">{name}</h1>
+                    <p className="text-xl">{description}</p>
 
-                  <div className="flex items-center gap-4">
-                    <Link className="underline font-Outfit" to="#">
-                      See Demo
-                    </Link>
-                    {isPersonal ? (
-                      <Link className="underline" to="#">
-                        Github
-                      </Link>
-                    ) : (
-                      ""
-                    )}
+                    <div className="flex items-center gap-4">
+                      {url ? (
+                        <Link className="underline font-Outfit" to={url}>
+                          See Demo
+                        </Link>
+                      ) : (
+                        <></>
+                      )}
+                      {isPersonal ? (
+                        <Link className="underline" to="#">
+                          Github
+                        </Link>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                    {/* <CustomButton title="Case Study" /> */}
                   </div>
-                  {/* <CustomButton title="Case Study" /> */}
                 </div>
               </div>
-            </div>
-          );
-        })
-      )}
-
-      {projects.length !== projectsCount ? (
+            );
+          })
+        )}
+      </div>
+      {/* {projects.length !== projectsCount ? (
         <div className="flex justify-between items-center">
           <button
             className="underline text-2xl m-auto"
@@ -138,7 +160,7 @@ const Projects = () => {
             View Less
           </button>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

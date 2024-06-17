@@ -16,36 +16,36 @@ const Home = () => {
     <div id="home" className="snap_parent  space-y-44 ">
       <div className="snap_child mt-24 sm:m-auto sm:h-screen flex  items-center justify-center flex-col gap-20 ">
         <div className="w-11/12   sm:w-9/12 m-auto">
-          <div className=" gap-4   h-full flex sm:flex-row flex-col-reverse items-center  justify-between">
+          <div className=" gap-4   h-full flex sm:flex-row flex-col-reverse items-center  justify-center">
             <div className="w-full">
+              <p className="text-3xl    w-full text-center  "> HI, I AM</p>
+              <br />
+              <h1 className="text-5xl text-center font-bold">SANKET !</h1>
+             
+             <br />
               <p className="text-xl sm:text-2xl">
-                <h1 className="flex  italic  leading-relaxed     mx-auto">
-                  <Typewriter
+                <p className="flex text-5xl w-8/12  justify-center   leading-relaxed     mx-auto">
+                  {/* <Typewriter
                     options={{
-                      strings: ["FRONTEND", "BACKEND", "FULL STACK WEB"],
+                      strings: ["A FRONTEND FOCUSED"],
                       delay: "100",
                       autoStart: true,
                       loop: true,
                     }}
-                  />
-                  DEVELOPER !
-                </h1>
-                <br className="" />{" "}
-                <p className="text-2xl sm:w-8/12  italic ">
-                  {" "}
-                  Hi, I am Sanket. A Frontend Focused Full Stack Web Developer
-                  based in Bangalore, India.
+                  /> */}
+                  A FRONTEND FOCUSED
                 </p>
-                <br />
-                <div className="flex sm:justify-start justify-center items-center gap-4">
+                <h4 className="text-center">FULL STACK WEB DEVELOPER !</h4>
+                <br className="" /> <br />
+                <div className="flex  justify-center items-center gap-4">
                   <Link
-                    to="https://drive.google.com/drive/folders/1bDBVfCfoIbI2gzIyDTas3LaQf8kazYvd"
+                    to="/https://drive.google.com/drive/folders/1bDBVfCfoIbI2gzIyDTas3LaQf8kazYvd"
                     className=""
                   >
                     <img className="w-6 h-6" src="/icons/resume.svg" alt="" />
                   </Link>
                   <Link
-                    to="https://www.linkedin.com/in/sanketnchaware/"
+                    to="/https://www.linkedin.com/in/sanketnchaware/"
                     className=""
                   >
                     <img className="w-6 h-6" src="/icons/linkedin.svg" alt="" />
@@ -56,19 +56,8 @@ const Home = () => {
                 </div>
               </p>
             </div>
-            <div className="w-8/12 debug">
-              <img src="/icons/programming.svg " className="w-full" alt="" />
-              {/* <div className="blob   w-full h-60 sm:h-80 relative overflow-hidden my-10 sm:my-20">
-                <img
-                  src="/icons/programming.svg "
-                  className="-top-5 absolute"
-                  alt=""
-                />
-                <div className="bg-transparent  -z-10 absolute  w-full h-full"></div>
-              </div> */}
-            </div>
           </div>
-          <div className="text-xl hidden sm:flex items-center justify-between sm:flex-wrap gap-4 w-full sm:w-5/12">
+          <div className="text-xl hidden sm:flex items-center justify-center sm:flex-wrap gap-4 w-full m-auto sm:w-5/12">
             <p className="font-bold sm:block hidden ">Tech Stack | </p>{" "}
             {/* <img className="w-8 h-8" src="/icons/htm.svg" alt="" /> */}
             {/* <img className="w-8 h-8" src="/icons/css.svg" alt="" /> */}
