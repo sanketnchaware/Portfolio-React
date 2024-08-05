@@ -37,7 +37,7 @@ module.exports = {
       },
 
       boxShadow: {
-        sameshadow: "2px 2px 50px 10px rgba(0,225,0,0.6)",
+        sameshadow: "2px 2px 50px 10px rgba(0,0,0,0.1)",
       },
     },
   },

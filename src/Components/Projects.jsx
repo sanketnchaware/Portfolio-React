@@ -94,7 +94,7 @@ const Projects = () => {
           projects.map(({ name, img, url, description, isPersonal }, index) => {
             return (
               <div
-                className={`  shadow-sameshadow  rounded-3xl  p-10 ${
+                className={`  shadow-sameshadow  border border-hackingGreen rounded-3xl  p-4 sm:p-10 ${
                   index < projectsCount ? "grid" : "hidden"
                 }   grid-cols-1 sm:grid-cols-2 justify-between gap-10 w-10/12 m-auto`}
               >
@@ -105,16 +105,16 @@ const Projects = () => {
                 >
                   <img
                     src={img}
-                    className="opacity-25 ease-linear duration-200 mix-blend-luminosity hover:mix-blend-normal cursor-pointer transition-all  hover:opacity-100 rounded-xl"
+                    className="opacity-75   rounded-xl"
                     alt="proj_image"
                   />
                 </div>
                 <div className="flex items-center">
                   <div className="space-y-6">
-                    <h1 className="text-3xl font-bold">{name}</h1>
-                    <p className="text-xl">{description}</p>
+                    <h1 className="tex-2xl sm:text-3xl font-bold">{name}</h1>
+                    <p className="text-base sm:text-xl">{description}</p>
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex  items-center gap-4">
                       {url ? (
                         <Link className="underline font-Outfit" to={url}>
                           See Demo

@@ -7,24 +7,38 @@ import Contact from "./Contact";
 import gsap from "gsap/dist/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Experiance from "./Experiance";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
 
+  const DownloadResume = () => {
+    // URL of the PDF file in the public directory
+    const url = "/resume-fend.pdf";
+
+    // Create an invisible anchor element
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "frontend-resume.pdf"; // The file name for the download
+
+    // Programmatically click the link to trigger the download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div id="home" className="snap_parent  space-y-44 ">
-      <div className="snap_child mt-24 sm:m-auto sm:h-screen flex  items-center justify-center flex-col gap-20 ">
+    <div id="home" className="snap_parent  space-y-10 sm:space-y-44 ">
+      <div className="snap_child mt-24 sm:m-auto sm:min-h-screen flex  items-center justify-center flex-col gap-20 ">
         <div className="w-11/12   sm:w-9/12 m-auto">
           <div className=" gap-4   h-full flex sm:flex-row flex-col-reverse items-center  justify-center">
-            <div className="w-full">
+            <div className="w-full mt-10 sm:mt-0">
               <p className="text-3xl    w-full text-center  "> HI, I AM</p>
               <br />
               <h1 className="text-5xl text-center font-bold">SANKET !</h1>
-             
-             <br />
+
+              <br />
               <p className="text-xl sm:text-2xl">
-                <p className="flex text-5xl w-8/12  justify-center   leading-relaxed     mx-auto">
+                <p className="flex text-3xl sm:text-5xl w-full sm:w-8/12  justify-center   leading-relaxed  sm:text-left text-center   mx-auto">
                   {/* <Typewriter
                     options={{
                       strings: ["A FRONTEND FOCUSED"],
@@ -35,24 +49,35 @@ const Home = () => {
                   /> */}
                   A FRONTEND FOCUSED
                 </p>
-                <h4 className="text-center">FULL STACK WEB DEVELOPER !</h4>
+                <h4 className="text-center  sm:text-3xl mt-4 text-2xl">
+                  FULL STACK WEB DEVELOPER !
+                </h4>
                 <br className="" /> <br />
                 <div className="flex  justify-center items-center gap-4">
-                  <Link
-                    to="/https://drive.google.com/drive/folders/1bDBVfCfoIbI2gzIyDTas3LaQf8kazYvd"
+                  <button onClick={DownloadResume} className="">
+                    <img className="w-7 h-7" src="/icons/resume.svg" alt="" />
+                  </button>
+                  <a
+                    href="https://www.linkedin.com/in/sanketnchaware/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className=""
                   >
-                    <img className="w-6 h-6" src="/icons/resume.svg" alt="" />
-                  </Link>
-                  <Link
-                    to="/https://www.linkedin.com/in/sanketnchaware/"
+                    <img
+                      className="w-7 h-7"
+                      src="/icons/linkedin.svg"
+                      alt="LinkedIn"
+                    />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className=""
+                    href="https://github.com/sanketnchaware"
+                    to="/"
                   >
-                    <img className="w-6 h-6" src="/icons/linkedin.svg" alt="" />
-                  </Link>
-                  <Link to="/">
                     <img className="w-8 h-8" src="/icons/github.svg" alt="" />
-                  </Link>
+                  </a>
                 </div>
               </p>
             </div>

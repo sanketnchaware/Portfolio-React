@@ -10,21 +10,21 @@ body {
   border: 1px solid red;
 }
 
-*{
+* {
 
   /* @apply debug */
 }
 
 .navlinks button:hover {
-  @apply border-b font-Outfit  border-l-0 shadow-xl   border-hackingGreen;
+  @apply border-b font-Outfit border-l-0 shadow-xl border-hackingGreen;
 }
 
 .navlinks button {
-  @apply cursor-pointer text-lg  m-auto px-4 border-l  border-hackingGreen;
+  @apply cursor-pointer text-lg m-auto px-4 border-l border-hackingGreen;
 }
 
 .heading {
-  @apply text-5xl m-auto w-fit  text-center font-extrabold;
+  @apply text-3xl sm:text-5xl m-auto w-full sm:w-fit text-center font-extrabold;
 }
 
 ::-webkit-scrollbar {
@@ -64,10 +64,12 @@ textarea {
 }
 
 @keyframes animate {
+
   0%,
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
+
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
@@ -80,41 +82,51 @@ textarea {
 h1 {
   @apply sm:tracking-[6px] tracking-[4px] font-normal text-[18px] md:text-[22px] xl:text-[28px] 2xl:text-[32px] 3xl:text-[36px];
 }
+
 h2 {
-  @apply tracking-widest font-normal text-[16px] md:text-[22px]   xl:text-[24px] 2xl:text-[26px] 3xl:text-[32px];
+  @apply tracking-widest font-normal text-[16px] md:text-[22px] xl:text-[24px] 2xl:text-[26px] 3xl:text-[32px];
 }
+
 h3 {
-  @apply font-normal text-[14px] md:text-[18px]  xl:text-[24px] 2xl:text-[22px] 3xl:text-[26px];
+  @apply font-normal text-[14px] md:text-[18px] xl:text-[24px] 2xl:text-[22px] 3xl:text-[26px];
 }
 
 h4 {
-  @apply tracking-widest font-normal text-[12px] md:text-[16px]  xl:text-[20px] 3xl:text-[24px];
+  @apply tracking-widest font-normal text-[12px] md:text-[16px] xl:text-[20px] 3xl:text-[24px];
 }
+
 h5 {
-  @apply tracking-widest font-normal text-[10px] md:text-[14px]  xl:text-[18px] 3xl:text-[20px];
+  @apply tracking-widest font-normal text-[10px] md:text-[14px] xl:text-[18px] 3xl:text-[20px];
 }
+
 h6 {
-  @apply tracking-widest font-normal  text-[8px] md:text-[12px]   xl:text-[16px] 3xl:text-[18px];
+  @apply tracking-widest font-normal text-[8px] md:text-[12px] xl:text-[16px] 3xl:text-[18px];
 }
+
 h7 {
-  @apply text-xl font-normal  text-[10px] md:text-xs xl:text-xs 3xl:text-sm;
+  @apply text-xl font-normal text-[10px] md:text-xs xl:text-xs 3xl:text-sm;
 }
 
 .body0 {
-  @apply text-base md:text-xl  xl:text-[22px] 3xl:text-[1.5rem];
+  @apply text-base md:text-xl xl:text-[22px] 3xl:text-[1.5rem];
 }
+
 .body1 {
-  @apply text-sm md:text-[22px]  xl:text-[20px] 3xl:text-[26px]  leading-relaxed;
+  @apply text-sm md:text-[22px] xl:text-[20px] 3xl:text-[26px] leading-relaxed;
 }
+
 .body2 {
-  @apply text-[12px] md:text-[16px]  xl:text-[20px] 3xl:text-[24px] tracking-wider   leading-relaxed;
+  @apply text-[12px] md:text-[16px] xl:text-[20px] 3xl:text-[24px] tracking-wider leading-relaxed;
 }
+
 .body3 {
-  @apply text-[12px] md:text-[14px]  xl:text-[18px] 3xl:text-[20px];
+  @apply text-[12px] md:text-[14px] xl:text-[18px] 3xl:text-[20px];
 }
+
 .body4 {
   @apply text-[10px] md:text-[12px] xl:text-[14px] 3xl:text-[18px];
 }
+
 .body5 {
-  @apply text-xs md:text-sm  xl:text-base 3xl:text-[16px];
+  @apply text-xs md:text-sm xl:text-base 3xl:text-[16px];
 }

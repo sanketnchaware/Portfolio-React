@@ -5,16 +5,16 @@ import CutomButton from "./CustomButton";
 const About = () => {
   return (
     <div id="About Me" className=" ">
-      <div id="about" className="flex    sm:h-screen items-center">
+      <div id="about" className="flex    sm:min-h-screen items-center">
         <div className=" ">
           <p className="heading">About Me !</p>
           <br />
-          <div className="flex justify-center text-2xl w-9/12 mx-auto">
+          <div className="flex justify-center text-lg sm:text-2xl w-11/12 sm:w-9/12 mx-auto">
             <p className="text-center leading-normal">
               Hi, I am Sanket. A Frontend Focused Full Stack Web Developer based
               in Bangalore, India. A Covid batch graduate with a passion for web
               development. After completing a 6-month full-stack training
-              program, I've spent the last 2.2 years working as a frontend
+              program, I've spent the last 2.5 years working as a frontend
               developer at a Bangalore-based startup. My expertise lies in
               crafting dynamic web experiences using HTML, CSS, JavaScript,
               React, Redux Toolkit, and Tailwind CSS. Check out my projects
@@ -24,14 +24,14 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 py-20 sm:h-screen sm:items-start items-center sm:grid-cols-2 justify-between gap-10 w-10/12 mx-auto">
+      <div className="grid grid-cols-1 py-20 sm:min-h-screen sm:items-start items-center sm:grid-cols-2 justify-between gap-10 w-11/12 sm:w-10/12 mx-auto">
         <div>
-          <h1 className="text-2xl sm:text-left text-center">
+          <h1 className="text-2xl font-semibold sm:text-left text-center">
             Get to know me !
           </h1>
 
           <br />
-          <div className="text-2xl space-y-6 sm:space-y-2 sm:text-left text-center">
+          <div className="text-xl sm:text-2xl space-y-6 sm:space-y-2 sm:text-left text-center">
             {" "}
             <p>
               Web Applications that leads to the success of the overall product.

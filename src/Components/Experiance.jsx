@@ -2,20 +2,24 @@ import React from "react";
 
 const Experiance = () => {
   return (
-    <div className="w-9/12 m-auto h-screen  pt-24  ">
+    <div className="w-11/12 sm:w-9/12 m-auto sm:min-h-screen  pt-24  ">
       <div className=" space-y-10">
-        <p className="heading ">Experiance !</p>
+        <p className="heading  w-full">Experiance !</p>
 
-        <div className=" text-2xl flex mt-10 items-center  justify-between">
+        <div className="text-xl sm:text-2xl flex sm:flex-row flex-col mt-10 sm:items-center justify-between">
           <div>
-            <p>Software Engineer</p>
+            <p>Associate Software Developer</p>
             <p>Scubeelate Technologies Pvt. Ltd.</p>
           </div>
           <div>
-            <p>2022 - present</p> <p>Bangalore, India</p>
+            <p className="flex">
+              2022 - present
+              <span className="sm:hidden block">, Bangalore, India</span>
+            </p>{" "}
+            <p className="hidden sm:block">Bangalore, India</p>
           </div>
         </div>
-        <br />
+
         <ul className="list-disc space-y-4 pl-6 ">
           <li className="text-xl">
             Built responsive and performant user interfaces using ReactJS,
