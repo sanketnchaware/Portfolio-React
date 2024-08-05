@@ -21,7 +21,7 @@ const Footer = () => {
               {
                 image:
                   "https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png",
-                url: "https://www.linkedin.com/in/sanketnchaware/",
+                url: "/https://www.linkedin.com/in/sanketnchaware/",
               },
               {
                 image:
@@ -41,10 +41,9 @@ const Footer = () => {
             ].map(({ image, url }) => {
               return (
                 <a
-                  href=""
+                  href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=""
                 >
                   <img className="w-10 h-10" src={image} alt="LinkedIn" />
                 </a>
