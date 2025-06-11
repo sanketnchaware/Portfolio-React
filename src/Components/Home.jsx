@@ -18,7 +18,7 @@ const Home = () => {
     // Create an invisible anchor element
     const link = document.createElement("a");
     link.href = url;
-    link.download = "frontend-resume.pdf"; // The file name for the download
+    link.download = "SANKET_CHAWARE_FULLSTACK_RESUME.pdf"; // The file name for the download
 
     // Programmatically click the link to trigger the download
     document.body.appendChild(link);
@@ -31,11 +31,19 @@ const Home = () => {
       <div className="snap_child mt-24 sm:m-auto sm:min-h-screen flex  items-center justify-center flex-col gap-20 ">
         <div className="w-11/12   sm:w-9/12 m-auto">
           <div className=" gap-4   h-full flex sm:flex-row flex-col-reverse items-center  justify-center">
-            <div className="w-full mt-10 sm:mt-0">
+            <div className="w-full mt-4 sm:mt-0">
+              <div className="flex  mt-0 sm:mt-20 mb-4 justify-center">
+                <div className="rounded-full w-48  h-48 overflow-hidden">
+                  <img
+                    src="/images/profile.webp"
+                    alt="profile_photo"
+                    className="w-full filter grayscale h-full scale-110 object-top object-cover"
+                  />
+                </div>
+              </div>
               <p className="text-3xl    w-full text-center  "> HI, I AM</p>
               <br />
               <h1 className="text-5xl text-center font-bold">SANKET !</h1>
-
               <br />
               <p className="text-xl sm:text-2xl">
                 <p className="flex text-3xl sm:text-5xl w-full sm:w-8/12  justify-center   leading-relaxed  sm:text-left text-center   mx-auto">

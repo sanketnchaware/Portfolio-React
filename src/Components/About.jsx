@@ -4,28 +4,27 @@ import CutomButton from "./CustomButton";
 
 const About = () => {
   return (
-    <div id="About Me" className=" ">
+    <div id="About Me" className="">
       <div id="about" className="flex    sm:min-h-screen items-center">
         <div className=" ">
           <p className="heading">About Me !</p>
           <br />
           <div className="flex justify-center text-lg sm:text-2xl w-11/12 sm:w-9/12 mx-auto">
             <p className="text-center leading-normal">
-              Hi, I am Sanket. A Frontend Focused Full Stack Web Developer based
-              in Bangalore, India. A Covid batch graduate with a passion for web
-              development. After completing a 6-month full-stack training
-              program, I've spent the last 2.5 years working as a frontend
-              developer at a Bangalore-based startup. My expertise lies in
-              crafting dynamic web experiences using HTML, CSS, JavaScript,
-              React, Redux Toolkit, and Tailwind CSS. Check out my projects
-              below.
+              👋 Hi, I’m Sanket — a Frontend Developer with 3+ years of
+              experience crafting clean, performant, and user-friendly web
+              interfaces. I specialize in React.js, Redux Toolkit, and Tailwind
+              CSS, and I’m passionate about building scalable products that feel
+              smooth and intuitive. From optimizing performance to collaborating
+              across teams, I bring a problem-solving mindset to every project.
+              Scroll down to see some of the work I’m proud of. 👇
             </p>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 py-20 sm:min-h-screen sm:items-start items-center sm:grid-cols-2 justify-between gap-10 w-11/12 sm:w-10/12 mx-auto">
-        <div>
+      <div className="grid grid-cols-1 py-20  sm:items-start items-center  justify-between gap-10 w-11/12  mx-auto">
+        {/* <div>
           <h1 className="text-2xl font-semibold sm:text-left text-center">
             Get to know me !
           </h1>
@@ -49,12 +48,12 @@ const About = () => {
             <br />
             <CutomButton title="Contact" />
           </div>
-        </div>
+        </div> */}
         <div>
-          <h1 className="text-2xl sm:text-left text-center">My Skills !</h1>
+          <p className="heading   text-center">My Skills !</p>
 
           <br />
-          <div className="flex sm:justify-start justify-center  flex-wrap gap-4  items-center">
+          <div className="flex justify-center  flex-wrap gap-4  items-center">
             {[
               "HTML",
               "CSS",

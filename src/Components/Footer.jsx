@@ -40,11 +40,7 @@ const Footer = () => {
               // },
             ].map(({ image, url }) => {
               return (
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={url} target="_blank" rel="noopener noreferrer">
                   <img className="w-10 h-10" src={image} alt="LinkedIn" />
                 </a>
               );
@@ -54,7 +50,7 @@ const Footer = () => {
       </div>
 
       <p className="text-sm text-center py-8">
-        © Copyright 2024. Made by Sanket Chaware
+        © Copyright {new Date().getFullYear()}. Made by Sanket Chaware
       </p>
     </div>
   );
