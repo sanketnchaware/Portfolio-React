@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import CutomButton from "./CustomButton";
+
 
 const About = () => {
   return (
