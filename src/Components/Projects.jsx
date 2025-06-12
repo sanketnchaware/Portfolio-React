@@ -87,7 +87,7 @@ const projects = [
     url: "https://kahani-dev.netlify.app/",
     github: "https://github.com/sanketnchaware/kahani",
     description:
-      "A modern story writing platform that allows users to write, publish, and explore creative stories. Built with a rich UI and smooth animations.",
+      "A responsive and user-friendly web application that enables users to write, publish, and read original stories across genres. Focused on intuitive UX, rich text formatting, and interactive features for storytelling.",
     isPersonal: true,
     techStack: "React.js, Tailwind CSS,Node.js, Express.js, Mongodb",
   },
