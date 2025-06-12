@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-slate-900 text-white ">
+    <div className=" bg-white drop-shadow-2xl ">
       <div className="border-b py-20 border-slate-600 sm:flex-row flex-col flex justify-between items-center gap-4 w-10/12 m-auto">
         <div className="w-full">
           <p className="text-2xl sm:text-left text-center">SANKET CHAWARE</p>
@@ -17,13 +17,11 @@ const Footer = () => {
           <div className="flex items-center justify-between gap-4">
             {[
               {
-                image:
-                  "https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png",
+                image: "/icons/linkedin.svg",
                 url: "https://www.linkedin.com/in/sanketnchaware/",
               },
               {
-                image:
-                  "https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png",
+                image: "/icons/github.svg",
                 url: "https://github.com/sanketnchaware",
               },
             ].map(({ image, url }) => (

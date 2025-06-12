@@ -23,8 +23,8 @@ module.exports = {
         // => @media (min-width: 1536px) { ... }
       },
       colors: {
-        hackingGreen: "#00FF00",
-        black: "#000000",
+        hackingGreen: "#111827",
+        black: "#F9FAFB ",
       },
       fontFamily: {
         Outfit: ['"Outfit"'],
