@@ -31,7 +31,7 @@ const Contact = () => {
         });
       },
       (error) => {
-        console.error("Error:", error.text);
+        console.log("Error:", error);
         alert("Failed to send message.");
       }
     );
