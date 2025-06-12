@@ -14,37 +14,23 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <p className="sm:block hidden text-2xl">SOCIAL</p>
-          <br />
           <div className="flex items-center justify-between gap-4">
             {[
               {
                 image:
                   "https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png",
-                url: "/https://www.linkedin.com/in/sanketnchaware/",
+                url: "https://www.linkedin.com/in/sanketnchaware/",
               },
               {
                 image:
                   "https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png",
-                url: "/https://github.com/sanketnchaware",
+                url: "https://github.com/sanketnchaware",
               },
-              // {
-              //   image:
-              //     "https://d33wubrfki0l68.cloudfront.net/ef67339f7016cb09ba66366c1dc9145ac69f2a21/feca1/assets/png/twitter-ico.png",
-              //   url: "#",
-              // },
-              // {
-              //   image:
-              //     "https://d33wubrfki0l68.cloudfront.net/493f1aa6da674c05bc606ba5b9e8092b881e8626/67c76/assets/png/yt-ico.png",
-              //   url: "#",
-              // },
-            ].map(({ image, url }) => {
-              return (
-                <a href={url} target="_blank" rel="noopener noreferrer">
-                  <img className="w-10 h-10" src={image} alt="LinkedIn" />
-                </a>
-              );
-            })}
+            ].map(({ image, url }) => (
+              <a href={url} target="_blank" rel="noopener noreferrer" key={url}>
+                <img className="w-10 h-10" src={image} alt="Social Icon" />
+              </a>
+            ))}
           </div>
         </div>
       </div>

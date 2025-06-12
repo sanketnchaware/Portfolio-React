@@ -16,11 +16,11 @@ body {
 }
 
 .navlinks button:hover {
-  @apply border-b font-Outfit border-l-0 shadow-xl border-hackingGreen;
+  @apply border-b font-Outfit  shadow-xl border-hackingGreen;
 }
 
 .navlinks button {
-  @apply cursor-pointer text-lg m-auto px-4 border-l border-hackingGreen;
+  @apply cursor-pointer text-lg m-auto px-4  border-hackingGreen;
 }
 
 .heading {

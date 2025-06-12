@@ -23,7 +23,7 @@ const Experiance = () => {
         <ul className="list-disc space-y-4 pl-6 ">
           <li className="text-xl">
             Built and optimized responsive websites using Next.js and Tailwind
-            CSS, ensuring fast load times, SEO readiness, and smooth
+            CSS, ensuring fast load times and smooth
             cross-device user experiences.
           </li>
           <li className="text-xl">

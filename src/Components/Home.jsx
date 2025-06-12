@@ -4,23 +4,19 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 // import Typewriter from "typewriter-effect";
-import gsap from "gsap/dist/gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+// import gsap from "gsap/dist/gsap";
+// import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Experiance from "./Experiance";
+import Skills from "./Skills";
 
 const Home = () => {
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
 
   const DownloadResume = () => {
-    // URL of the PDF file in the public directory
     const url = "/resume-fend.pdf";
-
-    // Create an invisible anchor element
     const link = document.createElement("a");
     link.href = url;
-    link.download = "SANKET_CHAWARE_FULLSTACK_RESUME.pdf"; // The file name for the download
-
-    // Programmatically click the link to trigger the download
+    link.download = "SANKET_CHAWARE_FULLSTACK_RESUME.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -28,7 +24,7 @@ const Home = () => {
 
   return (
     <div id="home" className="snap_parent  space-y-10 sm:space-y-44 ">
-      <div className="snap_child mt-24 sm:m-auto sm:min-h-screen flex  items-center justify-center flex-col gap-20 ">
+      <div className=" mt-24 sm:m-auto sm:min-h-screen flex  items-center justify-center flex-col gap-20 ">
         <div className="w-11/12   sm:w-9/12 m-auto">
           <div className=" gap-4   h-full flex sm:flex-row flex-col-reverse items-center  justify-center">
             <div className="w-full mt-4 sm:mt-0">
@@ -109,14 +105,18 @@ const Home = () => {
 
       <About />
 
+      <div id="skills" className="">
+        <Skills />
+      </div>
+
       <div id="experiance" className="">
         <Experiance />
       </div>
 
-      <div id="projects" className="snap_child">
+      <div id="projects" className=" ">
         <Projects />
       </div>
-      <div id="contact" className="snap_child">
+      <div id="contact" className=" ">
         <Contact />
       </div>
     </div>
