@@ -172,6 +172,7 @@ const Projects = () => {
                       <div className="flex  items-center gap-4">
                         {url ? (
                           <a
+                            rel="noopener noreferrer"
                             target="_blank"
                             className="underline font-bold font-Outfit"
                             href={url}
@@ -183,6 +184,7 @@ const Projects = () => {
                         )}
                         {
                           <a
+                            rel="noopener noreferrer"
                             target="_blank"
                             className="underline"
                             href={github}
