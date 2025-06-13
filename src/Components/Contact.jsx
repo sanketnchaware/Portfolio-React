@@ -38,49 +38,47 @@ const Contact = () => {
   };
 
   return (
-    <div className="   h-screen      ">
-      <div className="flex w-full h-full items-center">
-        <div className="w-full  space-y-8">
-          <p className="heading ">Contact Me !</p>
+    <div className="flex lg:min-h-screen w-full h-full items-center">
+      <div className="w-full  space-y-8">
+        <p className="heading ">Contact Me !</p>
 
-          <form
-            ref={form}
-            onSubmit={handleSubmit}
-            className="flex flex-col border border-slate-600 rounded-xl gap-6 items-center justify-between w-10/12  p-6 sm:p-10  mx-auto "
-          >
-            <input
-              required
-              type="text"
-              onChange={handleChange}
-              name="name"
-              className="w-full"
-              placeholder="Enter your name"
-              value={params?.name}
-            />
+        <form
+          ref={form}
+          onSubmit={handleSubmit}
+          className="flex flex-col border  border-slate-600 rounded-xl gap-6 items-center justify-between w-10/12  p-6 lg:p-10  mx-auto "
+        >
+          <input
+            required
+            type="text"
+            onChange={handleChange}
+            name="name"
+            className="w-full"
+            placeholder="Enter your name"
+            value={params?.name}
+          />
 
-            <input
-              required
-              type="email"
-              placeholder="Enter your email address"
-              className="w-full"
-              onChange={handleChange}
-              name="email"
-              value={params.email}
-            />
+          <input
+            required
+            type="email"
+            placeholder="Enter your email address"
+            className="w-full"
+            onChange={handleChange}
+            name="email"
+            value={params.email}
+          />
 
-            <textarea
-              placeholder="Enter your message"
-              onChange={handleChange}
-              name="message"
-              className="w-full"
-              value={params.message}
-              cols="30"
-              rows="5"
-            ></textarea>
+          <textarea
+            placeholder="Enter your message"
+            onChange={handleChange}
+            name="message"
+            className="w-full"
+            value={params.message}
+            cols="30"
+            rows="5"
+          ></textarea>
 
-            <CustomButton title="Submit" />
-          </form>
-        </div>
+          <CustomButton title="Submit" />
+        </form>
       </div>
     </div>
   );

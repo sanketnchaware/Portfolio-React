@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-white drop-shadow-2xl ">
-      <div className="border-b py-20 border-slate-600 sm:flex-row flex-col flex justify-between items-center gap-4 w-10/12 m-auto">
+    <div className=" bg-white drop-shadow-2xl lg:mt-0 mt-10 ">
+      <div className="border-b py-20 border-slate-600 lg:flex-row flex-col flex justify-between items-center gap-4 w-10/12 m-auto">
         <div className="w-full">
-          <p className="text-2xl sm:text-left text-center">SANKET CHAWARE</p>
+          <p className="text-2xl lg:text-left text-center">SANKET CHAWARE</p>
           <br />
-          <p className=" leading-relaxed  sm:w-1/2 sm:text-left text-center w-full">
+          <p className=" leading-relaxed  lg:w-1/2 lg:text-left text-center w-full">
             A Frontend focused Web Developer building the Frontend of Websites
             and Web Applications that leads to the success of the overall
             product.

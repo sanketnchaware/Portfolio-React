@@ -2,11 +2,11 @@ import React from "react";
 
 const Experiance = () => {
   return (
-    <div className="w-11/12 sm:w-9/12 m-auto sm:min-h-screen  pt-24  ">
+    <div className="w-11/12 lg:w-9/12 m-auto lg:min-h-screen  flex items-center  ">
       <div className=" space-y-10">
         <p className="heading  w-full">Experience !</p>
 
-        <div className="text-xl sm:text-2xl flex sm:flex-row flex-col mt-10 sm:items-center justify-between">
+        <div className="text-xl lg:text-2xl flex lg:flex-row flex-col mt-10 lg:items-center justify-between">
           <div>
             <p>Associate Software Developer</p>
             <p>Scubeelate Technologies Pvt. Ltd.</p>
@@ -14,17 +14,17 @@ const Experiance = () => {
           <div>
             <p className="flex">
               Feb 2022 - Nov 2024
-              <span className="sm:hidden block">, Bangalore, India</span>
+              <span className="lg:hidden block">, Bangalore, India</span>
             </p>{" "}
-            <p className="hidden sm:block">Bangalore, India</p>
+            <p className="hidden lg:block">Bangalore, India</p>
           </div>
         </div>
 
         <ul className="list-disc space-y-4 pl-6 ">
           <li className="text-xl">
             Built and optimized responsive websites using Next.js and Tailwind
-            CSS, ensuring fast load times and smooth
-            cross-device user experiences.
+            CSS, ensuring fast load times and smooth cross-device user
+            experiences.
           </li>
           <li className="text-xl">
             Developed admin dashboards using React.js and TypeScript,

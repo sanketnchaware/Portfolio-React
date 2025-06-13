@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-offwhite text-hackingGreen font-Outfit;
+  @apply bg-gray-200 text-hackingGreen font-Outfit;
 }
 
 .debug {
@@ -23,7 +23,7 @@ body {
 }
 
 .heading {
-  @apply text-3xl sm:text-5xl m-auto w-full sm:w-fit text-center font-extrabold;
+  @apply text-3xl lg:text-5xl m-auto w-full lg:w-fit text-center font-extrabold;
 }
 
 ::-webkit-scrollbar {
@@ -48,7 +48,7 @@ body {
 
 input,
 textarea {
-  @apply outline-none bg-offwhite text-hackingGreen border border-slate-600 rounded-xl px-6 py-3;
+  @apply outline-none bg-[#2E2E2E] text-hackingGreen border border-slate-600 rounded-xl px-6 py-3;
 }
 
 .blob {
@@ -78,7 +78,7 @@ textarea {
 }
 
 h1 {
-  @apply sm:tracking-[6px] tracking-[4px] font-normal text-[18px] md:text-[22px] xl:text-[28px] 2xl:text-[32px] 3xl:text-[36px];
+  @apply lg:tracking-[6px] tracking-[4px] font-normal text-[18px] md:text-[22px] xl:text-[28px] 2xl:text-[32px] 3xl:text-[36px];
 }
 
 h2 {

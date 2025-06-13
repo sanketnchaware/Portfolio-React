@@ -1,17 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import About from "./About";
-// import CutomButton from "./CustomButton";
+import Skills from "./Skills";
+import Experiance from "./Experiance";
 import Projects from "./Projects";
 import Contact from "./Contact";
-// import Typewriter from "typewriter-effect";
-// import gsap from "gsap/dist/gsap";
-// import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import Experiance from "./Experiance";
-import Skills from "./Skills";
 
-const Home = () => {
-  // gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
+const HomeSection = () => {
+  const sectionsRef = useRef([]);
   const DownloadResume = () => {
     const url = "/resume.pdf";
     const link = document.createElement("a");
@@ -22,26 +21,50 @@ const Home = () => {
     document.body.removeChild(link);
   };
 
-  return (
-    <div id="home" className="snap_parent  space-y-10 sm:space-y-44 ">
-      <div className=" mt-24 sm:m-auto sm:min-h-screen flex  items-center justify-center flex-col gap-20 ">
-        <div className="w-11/12  flex   sm:w-9/12 m-auto">
-          <div className=" gap-4    h-full flex sm:flex-row flex-col-reverse items-center  justify-center">
-            <div className="h-full w-full mt-8 sm:mt-0 grid grid-cols-1 sm:grid-cols-2 gap-10 items-center px-6 sm:px-16">
-              {/* Left Content */}
-              <div className="space-y-6 sm:space-y-8 text-center sm:text-left">
-                <p className="text-2xl sm:text-3xl tracking-wide">HI, I AM</p>
+  useEffect(() => {
+    sectionsRef.current.forEach((section) => {
+      gsap.fromTo(
+        section,
+        { autoAlpha: 0, scale: 1.01 },
+        {
+          autoAlpha: 1,
+          duration: 1,
+          scale: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+            toggleActions: "play  none none none",
+          },
+        }
+      );
+    });
+  }, []);
 
-                <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight">
+  return (
+    <div id="home" className="snap_parent">
+      <div className="bg-white" ref={(el) => (sectionsRef.current[0] = el)}>
+        <div className="bg-white w-11/12 lg:w-9/12 m-auto lg:py-0 py-20 lg:min-h-screen lg:flex lg:items-center lg:justify-center px-6">
+          <div className="w-full max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+              <div className="order-1 lg:order-2 flex justify-center">
+                <div className="rounded-full w-64 h-64 lg:w-96 lg:h-96 overflow-hidden shadow-2xl">
+                  <img
+                    src="/images/new_profile.webp"
+                    alt="Profile"
+                    className="w-full h-full object-cover grayscale object-top transition hover:scale-110 scale-105 duration-300"
+                  />
+                </div>
+              </div>
+              <div className="order-2 lg:order-1 space-y-6 lg:space-y-8 text-center lg:text-left">
+                <p className="text-2xl lg:text-3xl tracking-wide">HI, I AM</p>
+                <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight">
                   SANKET CHAWARE!
                 </h1>
-
-                <h4 className="text-xl sm:text-3xl font-medium text-black">
+                <h4 className="text-xl lg:text-3xl font-medium text-[#2E2E2E]">
                   FULL STACK WEB DEVELOPER!
                 </h4>
-
-                {/* Social & Resume */}
-                <div className="flex justify-center sm:justify-start gap-6 pt-6">
+                <div className="flex justify-center lg:justify-start gap-6 pt-6">
                   <button
                     onClick={DownloadResume}
                     className="hover:scale-110 transition"
@@ -52,7 +75,6 @@ const Home = () => {
                       alt="Resume"
                     />
                   </button>
-
                   <a
                     href="https://www.linkedin.com/in/sanketnchaware/"
                     target="_blank"
@@ -65,7 +87,6 @@ const Home = () => {
                       alt="LinkedIn"
                     />
                   </a>
-
                   <a
                     href="https://github.com/sanketnchaware"
                     target="_blank"
@@ -79,10 +100,8 @@ const Home = () => {
                     />
                   </a>
                 </div>
-
-                {/* Tech Stack */}
-                <div className="hidden sm:flex items-center gap-4 pt-4 flex-wrap">
-                  <p className="font-semibold text-lg text-black">
+                <div className="hidden lg:flex items-center gap-4 pt-4 flex-wrap">
+                  <p className="font-semibold text-lg text-[#2E2E2E]">
                     Tech Stack |
                   </p>
                   <img
@@ -103,40 +122,51 @@ const Home = () => {
                   />
                 </div>
               </div>
-
-              {/* Profile Image */}
-              <div className="flex justify-center sm:justify-end">
-                <div className="rounded-full w-64 h-64 sm:w-96 sm:h-96 overflow-hidden shadow-2xl">
-                  <img
-                    src="/images/new_profile.webp"
-                    alt="Profile"
-                    className="w-full h-full object-cover grayscale  object-top transition hover:scale-110 scale-105 duration-300"
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <About />
+      <div
+        className="bg-[#2E2E2E] text-white lg:py-0 py-20"
+        ref={(el) => (sectionsRef.current[1] = el)}
+      >
+        <About />
+      </div>
 
-      <div id="skills" className="">
+      <div
+        id="skills"
+        className="bg-white text-[#2E2E2E] lg:py-0 py-20"
+        ref={(el) => (sectionsRef.current[2] = el)}
+      >
         <Skills />
       </div>
 
-      <div id="experiance" className="">
+      <div
+        id="experiance"
+        className="text-white bg-[#2E2E2E] lg:py-0 py-20"
+        ref={(el) => (sectionsRef.current[3] = el)}
+      >
         <Experiance />
       </div>
 
-      <div id="projects" className=" ">
+      <div
+        id="projects"
+        className="bg-white text-[#2E2E2E] lg:py-0 py-20"
+        ref={(el) => (sectionsRef.current[4] = el)}
+      >
         <Projects />
       </div>
-      <div id="contact" className=" ">
+
+      <div
+        id="contact"
+        className="bg-[#2E2E2E] text-white lg:py-0 py-20"
+        ref={(el) => (sectionsRef.current[5] = el)}
+      >
         <Contact />
       </div>
     </div>
   );
 };
 
-export default Home;
+export default HomeSection;

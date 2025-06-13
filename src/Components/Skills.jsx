@@ -3,14 +3,14 @@ import Card from "./Card";
 
 const Skills = () => {
   return (
-    <div className="flex w-11/12 sm:w-9/12 m-auto   sm:min-h-screen items-center">
+    <div className="flex w-11/12 lg:w-9/12 m-auto     lg:min-h-screen items-center">
       {/* <div>
-          <h1 className="text-2xl font-semibold sm:text-left text-center">
+          <h1 className="text-2xl font-semibold lg:text-left text-center">
             Get to know me !
           </h1>
 
           <br />
-          <div className="text-xl sm:text-2xl space-y-6 sm:space-y-2 sm:text-left text-center">
+          <div className="text-xl lg:text-2xl space-y-6 lg:space-y-2 lg:text-left text-center">
             {" "}
             <p>
               Web Applications that leads to the success of the overall product.

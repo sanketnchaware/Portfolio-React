@@ -2,12 +2,15 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="About Me" className="">
-      <div id="about" className="flex    sm:min-h-screen items-center">
+    <div
+      id="About Me"
+      className=" w-11/12  lg:w-9/12 m-auto "
+    >
+      <div id="about" className="flex    lg:min-h-screen items-center">
         <div className=" ">
           <p className="heading">About Me !</p>
           <br />
-          <div className="flex justify-center text-lg sm:text-2xl w-11/12 sm:w-9/12 mx-auto">
+          <div className="flex justify-center text-lg lg:text-2xl  mx-auto">
             <p className="text-center leading-normal">
               👋 Hi, I’m Sanket — a Frontend Developer with 3+ years of
               experience crafting clean, performant, and user-friendly web

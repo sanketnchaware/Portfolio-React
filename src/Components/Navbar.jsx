@@ -15,7 +15,7 @@ const Navbar = () => {
           SAN<span className="bg-black text-white shadow-2xl">KET</span>
         </button>
       </div>
-      <div className="navlinks  hidden sm:flex justify-between   w-fit  ">
+      <div className="navlinks  hidden lg:flex justify-between   w-fit  ">
         {React.Children.toArray(
           [
             { name: "About Me ", url: "about" },

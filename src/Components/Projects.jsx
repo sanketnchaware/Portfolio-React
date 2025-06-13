@@ -134,7 +134,7 @@ const projects = [
 const Projects = () => {
   const [projectsCount] = useState(4);
   return (
-    <div id="About Me" className="py-24 space-y-10">
+    <div className=" lg:py-20 py-4  space-y-6 lg:space-y-10">
       <p className="heading">Projects !</p>
 
       <div className="flex justify-center text-2xl w-9/12 m-auto">
@@ -143,15 +143,15 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="space-y-20">
+      <div className="space-y-10 lg:space-y-20">
         {React.Children.toArray(
           projects.map(
             ({ name, img, url, description, github, techStack }, index) => {
               return (
                 <div
-                  className={`  shadow-sameshadow  border border-hackingGreen rounded-3xl  p-4 sm:p-10 ${
+                  className={`  shadow-sameshadow  border border-hackingGreen rounded-3xl  p-4 lg:p-10 ${
                     index < projectsCount ? "grid" : "hidden"
-                  }   grid-cols-1 sm:grid-cols-2 justify-between gap-10 w-10/12 m-auto`}
+                  }   grid-cols-1 md:grid-cols-2 items-center justify-between gap-4 lg:gap-10  w-11/12 lg:w-9/12 m-auto`}
                 >
                   <div
                     className={`${
@@ -161,12 +161,14 @@ const Projects = () => {
                     <img src={img} className="  rounded-xl" alt="proj_image" />
                   </div>
                   <div className="flex items-center">
-                    <div className="space-y-6">
-                      <h1 className="tex-2xl sm:text-3xl font-bold">{name}</h1>
-                      <p className="text-base sm:text-xl">{description}</p>
+                    <div className=" space-y-2 lg:space-y-6">
+                      <h1 className="text-xl lg:text-3xl font-bold">{name}</h1>
+                      <p className="text-base lg:text-xl">{description}</p>
 
-                      <p className="text-base sm:text-xl">
-                        <span className="font-bold text-xl">Tech Stack : </span>
+                      <p className="text-base lg:text-xl">
+                        <span className="font-bold lg:text-xl">
+                          Tech Stack :{" "}
+                        </span>
                         {techStack}
                       </p>
                       <div className="flex  items-center gap-4">
