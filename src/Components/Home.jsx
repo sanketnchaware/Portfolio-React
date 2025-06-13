@@ -25,47 +25,39 @@ const Home = () => {
   return (
     <div id="home" className="snap_parent  space-y-10 sm:space-y-44 ">
       <div className=" mt-24 sm:m-auto sm:min-h-screen flex  items-center justify-center flex-col gap-20 ">
-        <div className="w-11/12   sm:w-9/12 m-auto">
-          <div className=" gap-4   h-full flex sm:flex-row flex-col-reverse items-center  justify-center">
-            <div className="w-full mt-4 sm:mt-0">
-              <div className="flex  mt-0 sm:mt-20 mb-4 justify-center">
-                <div className="rounded-full w-48  h-48 overflow-hidden">
-                  <img
-                    src="/images/profile.webp"
-                    alt="profile_photo"
-                    className="w-full filter grayscale h-full scale-110 object-top object-cover"
-                  />
-                </div>
-              </div>
-              <p className="text-3xl    w-full text-center  "> HI, I AM</p>
-              <br />
-              <h1 className="text-5xl text-center font-bold">SANKET !</h1>
-              <br />
-              <p className="text-xl sm:text-2xl">
-                <p className="flex text-3xl sm:text-5xl w-full sm:w-8/12  justify-center   leading-relaxed  sm:text-left text-center   mx-auto">
-                  {/* <Typewriter
-                    options={{
-                      strings: ["A FRONTEND FOCUSED"],
-                      delay: "100",
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  /> */}
-                  A FRONTEND FOCUSED
-                </p>
-                <h4 className="text-center  sm:text-3xl mt-4 text-2xl">
-                  FULL STACK WEB DEVELOPER !
+        <div className="w-11/12  flex   sm:w-9/12 m-auto">
+          <div className=" gap-4    h-full flex sm:flex-row flex-col-reverse items-center  justify-center">
+            <div className="h-full w-full mt-8 sm:mt-0 grid grid-cols-1 sm:grid-cols-2 gap-10 items-center px-6 sm:px-16">
+              {/* Left Content */}
+              <div className="space-y-6 sm:space-y-8 text-center sm:text-left">
+                <p className="text-2xl sm:text-3xl tracking-wide">HI, I AM</p>
+
+                <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight">
+                  SANKET CHAWARE!
+                </h1>
+
+                <h4 className="text-xl sm:text-3xl font-medium text-black">
+                  FULL STACK WEB DEVELOPER!
                 </h4>
-                <br className="" /> <br />
-                <div className="flex  justify-center items-center gap-4">
-                  <button onClick={DownloadResume} className="">
-                    <img className="w-7 h-7" src="/icons/resume.svg" alt="" />
+
+                {/* Social & Resume */}
+                <div className="flex justify-center sm:justify-start gap-6 pt-6">
+                  <button
+                    onClick={DownloadResume}
+                    className="hover:scale-110 transition"
+                  >
+                    <img
+                      className="w-7 h-7"
+                      src="/icons/resume.svg"
+                      alt="Resume"
+                    />
                   </button>
+
                   <a
                     href="https://www.linkedin.com/in/sanketnchaware/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=""
+                    className="hover:scale-110 transition"
                   >
                     <img
                       className="w-7 h-7"
@@ -73,33 +65,57 @@ const Home = () => {
                       alt="LinkedIn"
                     />
                   </a>
+
                   <a
+                    href="https://github.com/sanketnchaware"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=""
-                    href="https://github.com/sanketnchaware"
-                    to="/"
+                    className="hover:scale-110 transition"
                   >
-                    <img className="w-8 h-8" src="/icons/github.svg" alt="" />
+                    <img
+                      className="w-8 h-8"
+                      src="/icons/github.svg"
+                      alt="GitHub"
+                    />
                   </a>
                 </div>
-              </p>
+
+                {/* Tech Stack */}
+                <div className="hidden sm:flex items-center gap-4 pt-4 flex-wrap">
+                  <p className="font-semibold text-lg text-black">
+                    Tech Stack |
+                  </p>
+                  <img
+                    className="w-10 h-10"
+                    src="/icons/mongo.svg"
+                    alt="MongoDB"
+                  />
+                  <img
+                    className="w-20 h-10 object-contain"
+                    src="/icons/express.svg"
+                    alt="Express"
+                  />
+                  <img className="w-9 h-9" src="/icons/react.svg" alt="React" />
+                  <img
+                    className="w-9 h-9"
+                    src="/icons/nodejs.svg"
+                    alt="Node.js"
+                  />
+                </div>
+              </div>
+
+              {/* Profile Image */}
+              <div className="flex justify-center sm:justify-end">
+                <div className="rounded-full w-64 h-64 sm:w-96 sm:h-96 overflow-hidden shadow-2xl">
+                  <img
+                    src="/images/new_profile.webp"
+                    alt="Profile"
+                    className="w-full h-full object-cover grayscale  object-top transition hover:scale-110 scale-105 duration-300"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="text-xl hidden sm:flex items-center justify-center sm:flex-wrap gap-4 w-full m-auto sm:w-5/12">
-            <p className="font-bold sm:block hidden ">Tech Stack | </p>{" "}
-            {/* <img className="w-8 h-8" src="/icons/htm.svg" alt="" /> */}
-            {/* <img className="w-8 h-8" src="/icons/css.svg" alt="" /> */}
-            {/* <img className="w-8 h-8" src="/icons/js.svg" alt="" /> */}
-            <img className="w-10 h-10" src="/icons/mongo.svg" alt="" />
-            <img className="w-20 h-20" src="/icons/express.svg" alt="" />
-            <img className="w-8 h-8" src="/icons/react.svg" alt="" />
-            {/* <img className="w-20 h-20" src="/icons/nextjs.svg" alt="" /> */}
-            {/* <img className="w-8 h-8" src="/icons/ts.svg" alt="" /> */}
-            <img className="w-8 h-8" src="/icons/nodejs.svg" alt="" />
-            {/* <img className="w-10 h-10" src="/icons/sass.svg" alt="" /> */}
-          </div>
-          {/* <CutomButton title="Projects" /> */}
         </div>
       </div>
 

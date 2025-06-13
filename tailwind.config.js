@@ -24,7 +24,7 @@ module.exports = {
       },
       colors: {
         hackingGreen: "#111827",
-        black: "#F9FAFB ",
+        offwhite: "#F9FAFB",
       },
       fontFamily: {
         Outfit: ['"Outfit"'],
