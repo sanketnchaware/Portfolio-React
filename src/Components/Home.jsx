@@ -13,7 +13,7 @@ const Home = () => {
   // gsap.registerPlugin(ScrollTrigger);
 
   const DownloadResume = () => {
-    const url = "/resume-fend.pdf";
+    const url = "/resume.pdf";
     const link = document.createElement("a");
     link.href = url;
     link.download = "SANKET_CHAWARE_FULLSTACK_RESUME.pdf";

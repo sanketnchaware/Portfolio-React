@@ -87,20 +87,20 @@ const projects = [
     url: "https://kahani-dev.netlify.app/",
     github: "https://github.com/sanketnchaware/kahani",
     description:
-      "A responsive and user-friendly web application that enables users to write, publish, and read original stories across genres. Focused on intuitive UX, rich text formatting, and interactive features for storytelling.",
+      "A responsive and user-friendly web application that enables users to write, publish, and read original stories across genres. Focused on intuitive UX and interactive features for storytelling.",
     isPersonal: true,
     techStack: "React.js, Tailwind CSS,Node.js, Express.js, Mongodb",
   },
-  {
-    name: "Nordstrom Clone",
-    img: "/images/nordstorm.webp",
-    url: "https://project-nordstrom.netlify.app/",
-    github: "https://github.com/sanketnchaware/Project_NordStorm",
-    description:
-      "A frontend clone of the Nordstrom e-commerce website, featuring a clean UI, category filters, and a responsive layout mimicking a real-world online store.",
-    isPersonal: true,
-    techStack: "HTML, CSS, React.js, Node.js, Express.js, Mongodb ",
-  },
+  // {
+  //   name: "Nordstrom Clone",
+  //   img: "/images/nordstorm.webp",
+  //   url: "https://project-nordstrom.netlify.app/",
+  //   github: "https://github.com/sanketnchaware/Project_NordStorm",
+  //   description:
+  //     "A frontend clone of the Nordstrom e-commerce website, featuring a clean UI, category filters, and a responsive layout mimicking a real-world online store.",
+  //   isPersonal: true,
+  //   techStack: "HTML, CSS, React.js, Node.js, Express.js, Mongodb ",
+  // },
   // {
   //   name: "Flipkart Clone",
   //   img: "/images/flipkart.webp",
