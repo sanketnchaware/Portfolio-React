@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const HomeSection = () => {
   const sectionsRef = useRef([]);
   const DownloadResume = () => {
-    const url = "/resume.pdf";
+    const url = "/SANKET NAGANATH CHAWARE_FW11_085_.pdf";
     const link = document.createElement("a");
     link.href = url;
     link.download = "SANKET_CHAWARE_FULLSTACK_RESUME.pdf";
@@ -42,7 +42,7 @@ const HomeSection = () => {
   }, []);
 
   return (
-    <div id="home" className="snap_parent">
+    <div id="home" className="">
       <div className="bg-white" ref={(el) => (sectionsRef.current[0] = el)}>
         <div className="bg-white w-11/12 lg:w-9/12 m-auto lg:py-0 py-20 lg:min-h-screen lg:flex lg:items-center lg:justify-center px-6">
           <div className="w-full max-w-7xl mx-auto">
@@ -50,7 +50,7 @@ const HomeSection = () => {
               <div className="order-1 lg:order-2 flex justify-center">
                 <div className="rounded-full w-64 h-64 lg:w-96 lg:h-96 overflow-hidden shadow-2xl">
                   <img
-                    src="/images/new_profile.webp"
+                    src="/images/profile.webp"
                     alt="Profile"
                     className="w-full h-full object-cover grayscale object-top transition hover:scale-110 scale-105 duration-300"
                   />
@@ -128,6 +128,7 @@ const HomeSection = () => {
       </div>
 
       <div
+        id="about"
         className="bg-[#2E2E2E] text-white lg:py-0 py-20"
         ref={(el) => (sectionsRef.current[1] = el)}
       >
