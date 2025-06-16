@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <div className="flex lg:min-h-screen w-full h-full items-center">
       <div className="w-full  space-y-8">
-        <p className="heading ">Contact Me !</p>
+        <p className="heading m-auto">Contact Me !</p>
 
         <form
           ref={form}

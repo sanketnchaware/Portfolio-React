@@ -23,7 +23,7 @@ body {
 }
 
 .heading {
-  @apply text-3xl lg:text-5xl m-auto w-full lg:w-fit text-center font-extrabold;
+  @apply text-3xl lg:text-5xl  w-full lg:w-fit text-center font-extrabold;
 }
 
 ::-webkit-scrollbar {

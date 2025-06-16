@@ -4,9 +4,9 @@ const Experiance = () => {
   return (
     <div className="w-11/12 lg:w-9/12 m-auto lg:min-h-screen  flex items-center  ">
       <div className=" space-y-10">
-        <p className="heading  w-full">Experience !</p>
+        <p className="heading m-auto  w-full">Experience !</p>
 
-        <div className="text-xl lg:text-2xl flex lg:flex-row flex-col mt-10 lg:items-center justify-between">
+        <div className="text-lg lg:text-xl flex lg:flex-row flex-col mt-10 lg:items-center justify-between">
           <div>
             <p>Associate Software Developer</p>
             <p>Scubeelate Technologies Pvt. Ltd.</p>

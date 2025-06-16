@@ -65,7 +65,7 @@ const HomeSection = () => {
                   FULL STACK WEB DEVELOPER!
                 </h4>
                 <div className="flex justify-center lg:justify-start gap-6 pt-6">
-                  <button
+                  <button title="Download Resume"
                     onClick={DownloadResume}
                     className="hover:scale-110 transition"
                   >

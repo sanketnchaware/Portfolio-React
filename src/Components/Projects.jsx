@@ -135,7 +135,7 @@ const Projects = () => {
   const [projectsCount] = useState(4);
   return (
     <div className=" lg:py-20 py-4  space-y-6 lg:space-y-10">
-      <p className="heading">Projects !</p>
+      <p className="heading m-auto">Projects !</p>
 
       <div className="flex justify-center text-2xl w-9/12 m-auto">
         <p className="text-center leading-normal">
