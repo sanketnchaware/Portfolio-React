@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import About from "./About";
-import Skills from "./Skills";
-import Experiance from "./Experiance";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import About from "../Components/About";
+import Skills from "../Components/Skills";
+import Experiance from "../Components/Experiance";
+import Projects from "../Components/Projects";
+import Contact from "../Components/Contact";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,7 +15,7 @@ const HomeSection = () => {
     const url = "/SANKET NAGANATH CHAWARE_FW11_085_.pdf";
     const link = document.createElement("a");
     link.href = url;
-    link.download = "SANKET_CHAWARE_FULLSTACK_RESUME.pdf";
+    link.download = "Sanket_Chaware_Frontend_Developer_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
