@@ -15,7 +15,7 @@ const HomeSection = () => {
     const url = "/SANKET NAGANATH CHAWARE_FW11_085_.pdf";
     const link = document.createElement("a");
     link.href = url;
-    link.download = "Sanket_Chaware_Frontend_Developer_Resume.pdf";
+    link.download = "SANKET NAGANATH CHAWARE_FW11_085_.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
